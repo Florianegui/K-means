@@ -5,12 +5,7 @@ import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 
 def plot_distributions(df):
-    """
-    Trace les histogrammes de distribution des variables
-    Parameters:
-    df : pandas.DataFrame
-        DataFrame avec les variables à visualiser
-    """
+# permet fe tracer les histogrammes de distribution des variables
     fig, axes = plt.subplots(1, len(df.columns), figsize=(15, 4))
     for i, col in enumerate(df.columns):
         axes[i].hist(df[col], bins=20, edgecolor='black')
@@ -21,11 +16,8 @@ def plot_distributions(df):
     plt.show()
 
 def plot_correlation_heatmap(df):
-    """Trace la heatmap de corrélation    
-    Parameters:
-    df : pandas.DataFrame
-        DataFrame avec les variables numériques
-    """
+#permet de tracer la heatmap de corrélation    
+    
     plt.figure(figsize=(10, 8))
     correlation_matrix = df.corr()
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', center=0,
@@ -35,32 +27,15 @@ def plot_correlation_heatmap(df):
     plt.show()
 
 def plot_pairplot(df, hue=None):
-    """Trace un pairplot des variables
-    Parameters:
-    -----------
-    df : pandas.DataFrame
-        DataFrame avec les variables
-    hue : str, optional
-        Variable pour colorer les points
-    """
+#permet de trace un pairplot des variables
+  
     sns.pairplot(df, hue=hue, diag_kind='hist', plot_kws={'alpha': 0.6})
     plt.suptitle('Pairplot des variables', y=1.02)
     plt.show()
 
 def plot_clusters_2d(df, labels, x_col, y_col):
-    """ Visualise les clusters en 2D
+# permet de visualiser les clusters en 2D
     
-    Parameters:
-    -----------
-    df : pandas.DataFrame
-        DataFrame avec les données
-    labels : array
-        Labels des clusters
-    x_col : str
-        Nom de la colonne pour l'axe X
-    y_col : str
-        Nom de la colonne pour l'axe Y
-    """
     plt.figure(figsize=(10, 8))
     scatter = plt.scatter(df[x_col], df[y_col], c=labels, cmap='viridis', 
                          alpha=0.6, s=50, edgecolors='black', linewidth=0.5)
@@ -73,22 +48,9 @@ def plot_clusters_2d(df, labels, x_col, y_col):
     plt.show()
 
 def plot_clusters_3d(df, labels, x_col, y_col, z_col):
-    """
-    Visualise les clusters en 3D
     
-    Parameters:
-    -----------
-    df : pandas.DataFrame
-        DataFrame avec les données
-    labels : array
-        Labels des clusters
-    x_col : str
-        Nom de la colonne pour l'axe X
-    y_col : str
-        Nom de la colonne pour l'axe Y
-    z_col : str
-        Nom de la colonne pour l'axe Z
-    """
+# permet fe visualiser les clusters en 3D
+
     fig = plt.figure(figsize=(12, 10))
     ax = fig.add_subplot(111, projection='3d')
     
@@ -105,16 +67,9 @@ def plot_clusters_3d(df, labels, x_col, y_col, z_col):
     plt.show()
 
 def plot_cluster_profiles(df, cluster_col='Cluster'):
-    """
-    Trace les profils moyens de chaque cluster
+
+# permet de trace les profils moyens de chaque cluster
     
-    Parameters:
-    -----------
-    df : pandas.DataFrame
-        DataFrame avec les données et les labels de cluster
-    cluster_col : str
-        Nom de la colonne contenant les labels de cluster
-    """
     numeric_cols = df.select_dtypes(include=[np.number]).columns
     numeric_cols = [col for col in numeric_cols if col != cluster_col]
     
