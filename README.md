@@ -86,6 +86,6 @@ Dossier `src/`
 Dossier `reports/`
 
 `reports/`
-- Dossier destiné à contenir les rapports générés (PDF, images, etc.)
-- Peut contenir le rapport final du TP au format PDF
+-comporte PDf + rapport 
+
 
