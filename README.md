@@ -1,22 +1,7 @@
 TP - K-Means : Segmentation Client
 
 Structure du projet
-
-
-K-means/
-├── data/                    # Dossier pour les données
-│   └── Mall_Customers.csv   # Dataset à télécharger depuis Kaggle
-├── notebooks/               # Notebooks Jupyter
-│   └── kmeans_analysis.ipynb
-├── src/                     # Scripts Python
-│   ├── data_preparation.py
-│   ├── kmeans_clustering.py
-│   └── visualization.py
-├── reports/                 # Rapports et visualisations
-│   └── rapport.pdf
-├── requirements.txt        
-├── .gitignore             
-└── README.md              
+        
 
 Description détaillée des fichiers
 
@@ -31,7 +16,7 @@ Description détaillée des fichiers
 - Utilise `jupyter nbconvert` pour exécuter toutes les cellules du notebook
 - Alternative si l'exécution directe échoue, tente d'exécuter le code Python directement
 
-`execute_notebook_with_outputs.py`**
+`execute_notebook_with_outputs.py`
 - Version avancée du script d'exécution qui capture toutes les sorties
 - Capture les graphiques matplotlib et les convertit en images base64
 - Sauvegarde le notebook avec toutes les sorties (texte, graphiques, erreurs) intégrées
@@ -59,7 +44,7 @@ Dossier `data/`
 
 Dossier `notebooks/`
 
-`kmeans_analysis.ipynb`**
+`kmeans_analysis.ipynb`
 - Notebook Jupyter principal contenant toute l'analyse
 - Réalise les 5 parties du TP : préparation des données, analyse exploratoire, application K-Means, interprétation, et 1 extension
 - Utilise les fonctions définies dans les modules `src/` pour organiser le code
@@ -100,7 +85,7 @@ Dossier `src/`
 
 Dossier `reports/`
 
-**`reports/`**
+`reports/`
 - Dossier destiné à contenir les rapports générés (PDF, images, etc.)
 - Peut contenir le rapport final du TP au format PDF
 
