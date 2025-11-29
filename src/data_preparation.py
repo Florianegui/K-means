@@ -11,7 +11,7 @@ def check_missing_values(df):
 
 def select_features(df):
     # sélec des variables numériques pertinentes
-    # on exclut CustomerID (id) et gender 
+    # on exclut CustomerID (id) et gender .
     features = df[['Age', 'Annual Income (k$)', 'Spending Score (1-100)']].copy()
     return features
 

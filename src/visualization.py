@@ -5,7 +5,7 @@ import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 
 def plot_distributions(df):
-# permet fe tracer les histogrammes de distribution des variables
+# permet fe tracer les histogrammes de distribution des variables.
     fig, axes = plt.subplots(1, len(df.columns), figsize=(15, 4))
     for i, col in enumerate(df.columns):
         axes[i].hist(df[col], bins=20, edgecolor='black')

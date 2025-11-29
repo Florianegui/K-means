@@ -183,7 +183,7 @@ for i, cell in enumerate(notebook['cells']):
                 }]
                 continue
 
-# sav le notebook avec toutes les sorties
+# sav le notebook avec toutes les sorties.
 print("Sauvegarde du notebook avec toutes les sorties...")
 with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(notebook, f, indent=1, ensure_ascii=False)

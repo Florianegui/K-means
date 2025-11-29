@@ -46,9 +46,8 @@ for i, cell in enumerate(notebook['cells']):
                 # continuer l'exécution même en cas d'erreur
                 continue
 
-print("="*70)
 print(f"Resume de l'execution:")
 print(f"  Cellules executees: {executed_count}")
 print(f"  Erreurs: {error_count}")
-print("="*70)
+
 

@@ -3,6 +3,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 import matplotlib.pyplot as plt
 
+# fonctions pour calculer l'inertie et les scores de silhouette.
 def calculate_inertia(X, k_range):
     inertias = []
     for k in k_range:

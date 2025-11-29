@@ -42,7 +42,7 @@ except Exception as e:
     with open(notebook_path, 'r', encoding='utf-8') as f:
         notebook = json.load(f)
     
-    # exécuter toutes les cellules de code
+    # exécuter toutes les cellules de code.
     for i, cell in enumerate(notebook['cells']):
         if cell['cell_type'] == 'code':
             code = ''.join(cell['source'])

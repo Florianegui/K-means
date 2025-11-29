@@ -6,14 +6,11 @@ Ce travail a été réalisé par Guillou Floriane et Jari Jenna.
 
 Pour plus d’informations, les graphiques sont disponibles dans le PowerPoint associé.
 
-1. Introduction
-1.1 Contexte
+1. Contexte & objectif 
 
 La segmentation client constitue un enjeu central pour les entreprises qui souhaitent personnaliser leurs actions marketing et optimiser leurs campagnes. Dans ce cadre, analyser les clients d’un centre commercial permet d’identifier des groupes homogènes se distinguant par des critères tels que l’âge, le revenu ou encore le comportement d’achat.
 
-1.2 Objectifs
-
-L’objectif de ce travail est d’identifier des segments de clients distincts, de comprendre leurs caractéristiques, de proposer des recommandations stratégiques adaptées à chacun, et d’évaluer la qualité de la segmentation obtenue.
+L'objectif de ce travail est d’identifier des segments de clients distincts, de comprendre leurs caractéristiques, de proposer des recommandations stratégiques adaptées à chacun, et d’évaluer la qualité de la segmentation obtenue.
 
 2. Données
 

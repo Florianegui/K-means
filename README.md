@@ -1,4 +1,4 @@
-TP - K-MeANS : Segmentation Client
+TP - K-Means : Segmentation Client
 
 Structure du projet
 
